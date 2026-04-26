@@ -1,66 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Midterm Outputs | Zey Pagulayan</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Midterm | Zey Pagulayan</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <div class="logo">ZEY.DEV</div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="midterm.html">Midterm</a></li>
-            <li><a href="final.html">Final</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <a href="index.html" class="nav-logo">JAVA <span>OOP</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="midterm.html" class="active">Midterm</a></li>
+      <li><a href="final.html">Final</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-    <div class="container">
-        <section>
-            <h1>Midterm Portfolio</h1>
-            <p class="card">This page presents my Midterm outputs in Object-Oriented Programming, including quizzes, seatworks, activities, and exams. These outputs demonstrate my understanding of Java programming concepts such as classes, objects, methods, and decision structures.</p>
-        </section>
-
-        <h2>Activities</h2>
-        <div class="card">
-            <h3>ATM Program (Java)</h3>
-            <p>A simulation of an Automated Teller Machine using basic OOP principles.</p>
-            <pre>
-public class ATM {
-    public static void main(String[] args) {
-        double balance = 5000;
-        System.out.println("Balance: " + balance);
-    }
-}           </pre>
-            <div class="output-box">Output: Balance: 5000</div>
-            <p><em>Reflection:</em> Working on the ATM project helped me understand how to manage state within an object and handle user input effectively.</p>
-        </div>
-
-        <div class="card">
-            <h3>Decision Structures (if-else)</h3>
-            <pre>
-if (grade >= 75) {
-    System.out.println("Passed");
-} else {
-    System.out.println("Failed");
-}</pre>
-            <p>I learned how to control the flow of logic based on specific conditions.</p>
-        </div>
-
-        <h2>Quizzes & Seatworks</h2>
-        <div class="card">
-            <h3>Quiz 1: Java Basics</h3>
-            <p><strong>Q:</strong> What is an Object?<br>
-               <strong>A:</strong> An instance of a class.<br>
-               <strong>Explanation:</strong> In Java, a class is a blueprint, and the object is the actual entity created from it.</p>
-        </div>
-
-        <div class="card">
-            <h3>Learning Reflection</h3>
-            <p>Throughout the Midterm period, I realized that Java syntax is strict but helps in catching errors early. My ability to structure code into logical methods has improved significantly compared to my first few weeks.</p>
-        </div>
+  <div class="wrap" style="padding: 50px 0;">
+    <h2 style="font-size: 2.5rem; margin-bottom: 40px;">Midterm <span style="color:var(--primary-red);">Outputs</span></h2>
+    
+    <div class="card">
+      <h3>Activity 01: ATM Simulation</h3>
+      <p>Using Java to simulate a secure banking transaction system.</p>
+      <pre><code>// Sample ATM Logic
+if (withdrawal <= balance) {
+    balance -= withdrawal;
+    System.out.println("Success!");
+}</code></pre>
+      <div class="output-box">Output: Success! Current Balance: PHP 4500.00</div>
     </div>
+
+    <div class="card">
+      <h3>Reflection</h3>
+      <p>Learning Java at PUP has been a journey of logic and precision. My focus is on building clean, modular code that is easy to maintain.</p>
+    </div>
+  </div>
 </body>
 </html>
